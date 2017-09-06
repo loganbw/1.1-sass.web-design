@@ -2,7 +2,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $grid-gutter-width: 10px;
 /* Import Bootstrap */
-
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 /* PALLET COLORS */
 $facebook-blue: #4B669F;
@@ -10,80 +9,83 @@ $RSS-yellow: #C07C27;
 $white: #FCFCFC;
 $button-red: #A31723;
 /*-------------------*/
-main{
-   background-image:url('../images/bg.jpg');
-background-position: right;
-background-size:cover;
+
+
+main {
+  background-image: url('../images/bg.jpg');
+  background-position: right;
+  background-size: cover;
 }
-.container{
-  width:70%;
+
+.container {
+  width: 70%;
   // height: 1700px;
 }
-.subscribe{
+
+.subscribe {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   flex-shrink: 1;
-margin-bottom: 10px;
-span{
-    text-align: center;
-color: #CBC7C3;
-top:50%;
-}
-.social{
-  border-left: 2px dotted $white;
-  border-left-width: 4px;
-  margin-bottom: 10px;
-  // width: 200px;
-padding: .7% 20% .7% 0%;
-align-items: center;
+  margin-bottom: 20px;
+  align-items: center;
 
-}
-a{
-font-size: 33px;
+  span {
+    color: #CBC7C3;
+    top: 50%;
+  }
 
-// border-style: dotted;
-
-}
-
-}
-.nav-sheet{
-  display: flex;
-  justify-content: space-between ;
-  position: relative;
-
+  .social {
+    border-left: 2px dotted $white;
+    border-left-width: 4px;
+    // width: 200px;
+  }
 
   a {
-
-   background-color: $button-red;
-   display: block;
-   color: $white;
-   font-size: 12px;
-   text-align: center;
-   padding: 10px;
-   text-transform: uppercase;
-  //  width: 150px;
-   &::before, &::after {
-     content: '';
-     display: block;
-     width: 15px;
-     border-bottom: 1px solid white;
-     top: 50%;
-     position: absolute;
-     margin-bottom: 5px;
-
-   }
-   &::before {
-     left: 10px;
-   }
-     &::after {
-       right: 10px;
-   }
- }
-.nav{
-padding: 5px;
+    font-size: 33px;
+    // border-style: dotted;
+  }
 }
+
+.nav-sheet {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  a {
+    background-color: $button-red;
+    display: block;
+    color: $white;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    //  width: 150px;
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      width: 15px;
+      border-bottom: 1px solid white;
+      top: 50%;
+      position: absolute;
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      left: 10px;
+    }
+
+    &::after {
+      right: 10px;
+    }
+  }
+
+  .nav {
+    padding: 5px;
+  }
 }
-.image-scroller{
+
+.image-scroller {
   background-image: url('../images/top-image.png');
   width: 100%;
   height: 358px;
@@ -91,134 +93,155 @@ padding: 5px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 5px;
-  img{
-padding-top: 40px;
-padding-left: 20px;
+  margin-bottom: 20px;
+
+  img {
+    padding-top: 40px;
+    padding-left: 20px;
   }
 }
-.skater{
+
+.skater {
   background-color: $white;
   // margin: 5px;
-height: 400px;
+  padding: 20px;
+  min-height: 400px;
 }
-.board{
+
+.board {
   display: flex;
   max-width: 100%;
-    margin: auto;
-    min-height: 20%;
+  margin: auto;
+  min-height: 20%;
 }
-.box-1{    display: flex;
-    flex-flow: row wrap;
-    width: 557px;
-    margin-top: 20px;
-    height: 300px;
 
+.box-1 {
+  // display: flex;
+  // flex-flow: row wrap;
+  //width: 557px;
+  margin-top: 20px;
+  height: 400px;
 }
-.box-2{
-  width: 33%;
+
+.box-2 {
+  // width: 33%;
   margin-top: 22px;
-  height: 305px;
+  height: 400px;
 }
-.name{
+
+.name {
   text-align: center;
   color: $white;
   font-size: 30px;
-line-height: 1.2;
-font-weight: bold;
+  line-height: 1.2;
+  font-weight: bold;
 }
-.skater-background1{
-  background-image: url('../images/sk8er-4.png');
-// background-position: center;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-  width: 270.22px;
-  height: 50%;
-position: relative;
-border: 6px solid $white;
-margin: 3px;
-  padding-top: 35px
 
+.skater-background1 {
+  background-image: url('../images/sk8er-4.png'); // background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //width: 270.22px;
+  height: 100%;
+  position: relative;
+  border: 6px solid $white;
+  // margin: 3px;
+  padding-top: 35px;
 }
-.skater-background2{
+
+.skater-background2 {
   background-image: url('../images/sk8er-3.png');
   // background-position: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    width: 270.22px;
-    height: 50%;
-    border: 6px solid $white;
-margin: 3px;
-padding-top: 38px
+  //width: 270.22px;
+  height: 100%;
+  border: 6px solid $white;
+  // margin: 3px;
+  padding-top: 38px;
 }
-.skater-background3{
+
+.skater-background3 {
   background-image: url('../images/sk8er-2.png');
   width: 100%;
-
-  height:100%;
+  height: 100%;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid $white;
   margin: 2px;
-padding-top:100px;
-// background-position-x: 10px;
+  padding-top: 100px; // background-position-x: 10px;
 }
-.skater-background4{
-  background-image: url('../images/sk8er-1.png');
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  width: 546.44px;
-height: 50%;
-border: 5px solid $white;
-margin: 3px;
-padding-top: 48px;
-}
-.name{
-  // background-color: $white;
 
+.skater-background4 {
+  background-image: url('../images/sk8er-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //width: 546.44px;
+  height: 100%;
+  border: 5px solid $white;
+  margin: 3px;
+  padding-top: 48px;
 }
-.skateboardbackground{
+
+.name {
+  // background-color: $white;
+}
+
+.skateboardbackground {
   background-color: $white;
   display: flex;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
-.sk8{
-text-align: center;
-img{
-  padding: 10px 10px;
+
+.sk8 {
+  text-align: center;
+
+  img {
+    padding: 10px;
+  }
 }
-}
-.form-sheet{
+
+.form-sheet {
   background-color: $white;
   margin-bottom: 40px;
-
   padding-top: 10px;
   padding-bottom: 40px;
   padding-left: 20px;
 }
-.formstyle{
-  padding-top: 20px;
 
+.formstyle {
+  padding-top: 20px;
 }
-.fourm-area{
-    margin-right: 20px;
-    .placeholder{
-      text-transform: uppercase;
-    }
+
+.fourm-area {
+  margin-right: 20px;
+
+  .placeholder {
+    text-transform: uppercase;
+  }
 }
-button{
+
+button {
   float: right;
- background-color: $button-red;
- color: $white;
- margin-top: 20px;
- margin-right: 20px;
+  background-color: $button-red;
+  color: $white;
+  margin-top: 20px;
+  margin-right: 20px;
 }
-.btn-default{
+
+.btn-default {
   background-color: $button-red;
   color: $white;
   padding: 3px 80px;
-  border-radius: 0px;
+  border-radius: 0;
+}
+
+.formbackground {
+  p {
+    line-height: 1.8;
+  }
 }
