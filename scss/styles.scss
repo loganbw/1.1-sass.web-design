@@ -125,6 +125,8 @@ main {
 
 .box-1 .row:first-child {
   height: 50%;
+  display: flex;
+
 }
 
 .box-1 .row:nth-child(2n) {
@@ -154,8 +156,9 @@ main {
   height: 100%;
   position: relative;
   border: 6px solid $white;
-  // margin: 3px;
+  margin-right: 3px;
   padding-top: 35px;
+  flex-grow: 1;
 }
 
 .skater-background2 {
@@ -169,6 +172,7 @@ main {
   border: 6px solid $white;
   // margin: 3px;
   padding-top: 38px;
+  flex-grow: 1;
 }
 
 .skater-background3 {
@@ -191,7 +195,7 @@ main {
   //width: 546.44px;
   height: 100%;
   border: 5px solid $white;
-  margin: 3px;
+  margin-top: 3px;
   padding-top: 48px;
 }
 

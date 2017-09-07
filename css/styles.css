@@ -5880,7 +5880,8 @@ main {
   height: 400px; }
 
 .box-1 .row:first-child {
-  height: 50%; }
+  height: 50%;
+  display: flex; }
 
 .box-1 .row:nth-child(2n) {
   height: 50%; }
@@ -5904,7 +5905,9 @@ main {
   height: 100%;
   position: relative;
   border: 6px solid #FCFCFC;
-  padding-top: 35px; }
+  margin-right: 3px;
+  padding-top: 35px;
+  flex-grow: 1; }
 
 .skater-background2 {
   background-image: url("../images/sk8er-3.png");
@@ -5913,7 +5916,8 @@ main {
   background-size: cover;
   height: 100%;
   border: 6px solid #FCFCFC;
-  padding-top: 38px; }
+  padding-top: 38px;
+  flex-grow: 1; }
 
 .skater-background3 {
   background-image: url("../images/sk8er-2.png");
@@ -5933,7 +5937,7 @@ main {
   background-size: cover;
   height: 100%;
   border: 5px solid #FCFCFC;
-  margin: 3px;
+  margin-top: 3px;
   padding-top: 48px; }
 
 .skateboardbackground {
