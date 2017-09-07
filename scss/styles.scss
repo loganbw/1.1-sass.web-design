@@ -123,6 +123,14 @@ main {
   height: 400px;
 }
 
+.box-1 .row:first-child {
+  height: 50%;
+}
+
+.box-1 .row:nth-child(2n) {
+  height: 50%;
+}
+
 .box-2 {
   // width: 33%;
   margin-top: 22px;
